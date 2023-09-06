@@ -10,51 +10,10 @@
     <link rel="stylesheet" href="assets/css/swiper.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
+ 
 <body class="font-cairo">
-
-    <header class="lg:py-5 bg-white sticky top-0 shadow-header transition-all duration-700">
-        <div class="container grid grid-cols-2 lg:flex lg:items-center lg:justify-between lg:px-10">
-            <a href="https://instanthelp.argent.com/login"
-                class="px-10 py-2 lg:p-0 col-span-2 lg:order-last text-[#ff602e] text-lg leading-7 tracking-[2px] font-semibold flex items-center justify-center lg:justify-end bg-[#001647] lg:bg-transparent gap-1">
-                <img src="assets/images/support.svg" width="38" height="38" alt="v">
-                Instant Help
-            </a>
-            <a href="#" class="pl-10 py-7 lg:p-0">
-                <img src="assets/images/logo.png" width="147" height="16" alt="Logo">
-                <span class="sr-only">Logo</span>
-            </a>
-            <!-- Navbar -->
-            <nav class="nav-menu flex justify-end">
-                <ul id="menu-header-menu"
-                    class="transition-all duration-700 flex flex-col lg:flex-row z-[1] py-4 lg:py-0 items-center gap-2 lg:gap-10 fixed lg:static -top-52 left-0 w-full lg:w-auto bg-[#f2fbfc] lg:bg-transparent">
-                    <li class="menu-item nav-item active ">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="menu-item  nav-item">
-                        <a href="/products.html" class="nav-link">Products</a>
-                    </li>
-                    <li class="menu-item  nav-item">
-                        <a href="/white-papers.html/" class="nav-link">White Papers</a>
-                    </li>
-                    <li class="menu-item  nav-item">
-                        <a href="/company.html" class="nav-link">Company</a>
-                    </li>
-                    <li class="menu-item  nav-item">
-                        <a target="_blank" rel="noopener" href="https://help.argent.com/support/"
-                            class="nav-link">Support</a>
-                    </li>
-                </ul>
-                <div class="toggle-mob-menu w-fit pr-10 py-7 lg:p-0 flex flex-col gap-1.5 items-end lg:hidden"
-                    id="toggle">
-                    <div class="one transition-all duration-300 origin-center h-[3px] w-7 bg-[#ff602e]"></div>
-                    <div class="two transition-all duration-300 origin-center h-[3px] w-7 bg-[#ff602e]"></div>
-                    <div class="three transition-all duration-300 origin-center h-[3px] w-7 bg-[#ff602e]"></div>
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </div>
-    </header>
+    <!--  Navbar  -->
+    <?php include('./layout/navbar.php'); ?>
 
     <main>
         <div class="crust-page-loader crust-animated-load" id="loader">
@@ -88,8 +47,7 @@
             </div>
         </div>
         <div class="swiper slider-certificate">
-            <div
-                class="swiper-wrapper items-center text-base leading-normal lg:text-[25px] lg:leading-[52px] py-3 -z-[1]">
+            <div class="swiper-wrapper items-center text-base leading-normal lg:text-[25px] lg:leading-[52px] py-3 -z-[1]">
                 <!-- slider item  -->
                 <div class="swiper-slide text-center cursor-grab">
                     <strong>
@@ -165,8 +123,7 @@
             </div>
         </div>
 
-        <a href="https://help.argent.com/product_downloads/product_downloads_omega/"
-            class="bg-[#f6fcfd] py-4 px-6 lg:px-0 block">
+        <a href="https://help.argent.com/product_downloads/product_downloads_omega/" class="bg-[#f6fcfd] py-4 px-6 lg:px-0 block">
             <div class="container grid lg:grid-cols-2 items-center gap-[30px]">
                 <div class="lg:order-last">
                     <img src="assets/images/hero-sec.webp" width="645" height="429" alt="Hero" loading="lazy">
@@ -175,8 +132,7 @@
 
                     <p class="flex items-center gap-2 text-[#384b6a] text-base lg:text-2xl lg:leading-[22px]">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                            <path fill="#1565d8"
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                            <path fill="#1565d8" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                             </path>
                         </svg>
                         <strong>Free</strong> SNMP
@@ -185,8 +141,7 @@
 
                     <p class="flex items-center gap-2 text-[#384b6a] text-base lg:text-2xl lg:leading-[22px]">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                            <path fill="#1565d8"
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                            <path fill="#1565d8" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                             </path>
                         </svg>
                         <strong>Free</strong> <u>Automated</u> Network Discovery
@@ -194,8 +149,7 @@
 
                     <p class="flex items-center gap-2 text-[#384b6a] text-base lg:text-2xl lg:leading-[22px]">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                            <path fill="#1565d8"
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                            <path fill="#1565d8" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                             </path>
                         </svg>
                         <strong>Free</strong> SSL Certificate Monitoring
@@ -203,8 +157,7 @@
 
                     <p class="flex items-center gap-2 text-[#384b6a] text-base lg:text-2xl lg:leading-[22px]">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                            <path fill="#1565d8"
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                            <path fill="#1565d8" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                             </path>
                         </svg>
                         <strong>Free</strong> Cisco Config Monitoring And Backup
@@ -212,15 +165,13 @@
 
                     <p class="flex items-center gap-2 text-[#384b6a] text-base lg:text-2xl lg:leading-[22px]">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                            <path fill="#1565d8"
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                            <path fill="#1565d8" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                             </path>
                         </svg>
                         <strong>Free</strong> CCTV Monitoring And Automation
                     </p>
 
-                    <span
-                        class="flex items-center gap-3 pl-[30px] text-[#1565d8] text-base lg:text-3xl underline font-semibold">
+                    <span class="flex items-center gap-3 pl-[30px] text-[#1565d8] text-base lg:text-3xl underline font-semibold">
                         Click
                         To
                         Download <img src="assets/images/right-arrow.svg" width="23" height="23" alt="Icon">
@@ -239,14 +190,12 @@
                 </div>
                 <div class="grid lg:grid-cols-3 gap-4">
                     <!-- item  -->
-                    <a href="#" class="card-item downloadLink"
-                        data-file="assets/pdf/Argent_Omega__FREE_FEATURE_White_Paper_Automatically_Monitor_CCTV_Cameras_In_Under_Four_Hours.pdf">
+                    <a href="#" class="card-item downloadLink" data-file="assets/pdf/Argent_Omega__FREE_FEATURE_White_Paper_Automatically_Monitor_CCTV_Cameras_In_Under_Four_Hours.pdf">
                         <div class="new-badge-1">
                             Free Product
                         </div>
                         <div class="flex flex-col gap-2 pt-8">
-                            <h3
-                                class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
+                            <h3 class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
                                 Argent White Paper <br>
                                 Monitor CCTVs In
                                 Under Four Hours
@@ -262,14 +211,12 @@
                         </div>
                     </a>
                     <!-- item  -->
-                    <a href="#" class="card-item downloadLink"
-                        data-file="assets/pdf/Argent_Omega_FREE_FEATURE_Monitoring_SSL_Certificates_With_Argent_Omega.pdf">
+                    <a href="#" class="card-item downloadLink" data-file="assets/pdf/Argent_Omega_FREE_FEATURE_Monitoring_SSL_Certificates_With_Argent_Omega.pdf">
                         <div class="new-badge-1">
                             Free Product
                         </div>
                         <div class="flex flex-col gap-2 pt-8">
-                            <h3
-                                class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
+                            <h3 class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
                                 Argent White Paper <br>
                                 Monitoring SSL Certificates
                             </h3>
@@ -283,14 +230,12 @@
                         </div>
                     </a>
                     <!-- item  -->
-                    <a href="#" data-file="assets/pdf/Argent_Omega_FREE_FEATURE_White Paper_Keeping_All_Kids_Safe.pdf"
-                        class="card-item downloadLink">
+                    <a href="#" data-file="assets/pdf/Argent_Omega_FREE_FEATURE_White Paper_Keeping_All_Kids_Safe.pdf" class="card-item downloadLink">
                         <div class="new-badge-1">
                             Free Product
                         </div>
                         <div class="flex flex-col gap-2 pt-8">
-                            <h3
-                                class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
+                            <h3 class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
                                 Argent White Paper <br>
                                 Keeping All Kids Safe
                             </h3>
@@ -304,11 +249,9 @@
                         </div>
                     </a>
                     <!-- item  -->
-                    <a href="#" class="card-item downloadLink"
-                        data-file="assets/pdf/Argent_Omega_White_Paper_SIEM-Complete_Features_and_Benefits.pdf">
+                    <a href="#" class="card-item downloadLink" data-file="assets/pdf/Argent_Omega_White_Paper_SIEM-Complete_Features_and_Benefits.pdf">
                         <div class="flex flex-col gap-2 pt-8">
-                            <h3
-                                class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
+                            <h3 class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
                                 Argent White Paper <br>
                                 SIEM-Complete
                                 Features
@@ -324,11 +267,9 @@
                         </div>
                     </a>
                     <!-- item  -->
-                    <a href="#" class="card-item downloadLink"
-                        data-file="assets/pdf/Argent_Omega_White_Paper_Stopping_Ransomware_Permanently.pdf">
+                    <a href="#" class="card-item downloadLink" data-file="assets/pdf/Argent_Omega_White_Paper_Stopping_Ransomware_Permanently.pdf">
                         <div class="flex flex-col gap-2 pt-8">
-                            <h3
-                                class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
+                            <h3 class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
                                 Argent White Paper <br>
                                 Stoppings Ransomware Permanently
                             </h3>
@@ -342,11 +283,9 @@
                         </div>
                     </a>
                     <!-- item  -->
-                    <a href="#" class="card-item downloadLink"
-                        data-file="assets/pdf/Argent_Omega_White_Paper_Benefits_Over_Argent_AT.pdf">
+                    <a href="#" class="card-item downloadLink" data-file="assets/pdf/Argent_Omega_White_Paper_Benefits_Over_Argent_AT.pdf">
                         <div class="flex flex-col gap-2 pt-8">
-                            <h3
-                                class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
+                            <h3 class="min-h-[105px] text-[#5a6581] text-base leading-[1.2] lg:text-3xl lg:leading-[1.2] font-medium">
                                 Argent White Paper <br>
                                 Argent Omega Benefits<br>
                                 Over Argent AT
@@ -365,80 +304,8 @@
         </section>
     </main>
 
-    <footer class="bg-[#f6fcfd] pt-[54px] pb-4">
-        <div class="flex flex-col container items-center">
-            <a href="#" class="">
-                <img src="assets/images/footer-logo.png" width="184" height="20" alt="logo">
-                <span class="sr-only">Logo</span>
-            </a>
-            <div class="grid lg:grid-cols-3 py-6 lg:pt-[100px] lg:pb-[66px] w-full gap-4">
-                <div class="flex flex-col">
-                    <h4
-                        class="text-[#233655] text-sm lg:text-[22px] leading-[30px] font-bold text-center tracking-[4px]">
-                        Company
-                    </h4>
-                    <ul class="flex items-center flex-col gap-1.5">
-                        <li class="">
-                            <a href="#"
-                                class="tracking-[2px] [word-spacing:4px] text-[#596480] text-center text-xs lg:text-sm leading-normal lg:leading-7 font-medium">Contact
-                                Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex flex-col">
-                    <h4
-                        class="text-[#233655] text-sm lg:text-[22px] leading-[30px] font-bold text-center tracking-[4px]">
-                        Documentation
-                    </h4>
-                    <ul class="flex items-center flex-col gap-1.5">
-                        <li class="">
-                            <a href="#"
-                                class="tracking-[2px] [word-spacing:4px] text-[#596480] text-center text-xs lg:text-sm leading-normal lg:leading-7 font-medium">
-                                Support and Knowledgebase Articles
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#"
-                                class="tracking-[2px] [word-spacing:4px] text-[#596480] text-center text-xs lg:text-sm leading-normal lg:leading-7 font-medium">
-                                Live Instant Help
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#"
-                                class="tracking-[2px] [word-spacing:4px] text-[#596480] text-center text-xs lg:text-sm leading-normal lg:leading-7 font-medium">
-                                Argent’s Architecture
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex flex-col">
-                    <h4
-                        class="text-[#233655] text-sm lg:text-[22px] leading-[30px] font-bold text-center tracking-[4px]">
-                        Privacy Policy
-                    </h4>
-                    <ul class="flex items-center flex-col gap-1.5">
-                        <li class="">
-                            <a href="#"
-                                class="tracking-[2px] [word-spacing:4px] text-[#596480] text-center text-xs lg:text-sm leading-normal lg:leading-7 font-medium">
-                                Privacy Policy
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="px-6 lg:px-0">
-                <p class="text-[#5a6581] text-xs lg:text-sm leading-7 text-center">
-                    Performance Assured by Argent® Web Defender
-                    <a class="text-[#1565d8]" href="https://help.argent.com/product_downloads/product_downloads_omega/"
-                        target="_blank">
-                        Click to download free demo
-                    </a>
-                </p>
-            </div>
-        </div>
-    </footer>
+    <!--  Footer  -->
+    <?php include('./layout/footer.php'); ?>
 
     <script src="assets/scripts/jquiry.js"></script>
     <script src="assets/scripts/swiper.js"></script>
